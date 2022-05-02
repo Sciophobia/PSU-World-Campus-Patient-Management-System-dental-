@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Container class="javax.swing.JFrame" name="addAppointmentFrame">
+      <Properties>
+        <Property name="title" type="java.lang.String" value="Add Appointment"/>
+        <Property name="alwaysOnTop" type="boolean" value="true"/>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[800, 600]"/>
+        </Property>
+        <Property name="name" type="java.lang.String" value="AddAppointmentFrame" noResource="true"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="createAppointmentButtoin" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jScrollPane2" min="-2" pref="307" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="lastNamePat1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="apptDate" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="lastNamePat3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="timeChoice" min="-2" pref="85" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="299" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="lastNamePat" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="firstNamePat" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="firstNameTextbox" max="32767" attributes="0"/>
+                              <Component id="lastNameTextbox" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="623" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="firstNamePat" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                      <Component id="firstNameTextbox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lastNamePat" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                      <Component id="lastNameTextbox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lastNamePat1" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                      <Component id="apptDate" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="lastNamePat3" min="-2" pref="16" max="-2" attributes="0"/>
+                      <Component id="timeChoice" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                      <Component id="jScrollPane2" min="-2" pref="182" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="190" max="32767" attributes="0"/>
+                  <Component id="createAppointmentButtoin" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="sansserif" size="36" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Add Appointment"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="createAppointmentButtoin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Create Appointment"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="createAppointmentButtoinActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="firstNamePat">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="First Name:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lastNamePat">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Last Name:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lastNamePat1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Date Choosen:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="apptDate">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Select Date"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lastNamePat3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Time:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Appointment Details:"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="appointmentDetails">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JTextField" name="firstNameTextbox">
+        </Component>
+        <Component class="javax.swing.JTextField" name="lastNameTextbox">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+          </Properties>
+        </Component>
+        <Component class="java.awt.Choice" name="timeChoice">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new java.awt.Choice()"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="List&lt;String&gt; timelist = new ArrayList&lt;&gt;();&#xa;timelist.add(&quot;0:00&quot;);&#xa;timelist.add(&quot;0:15&quot;);&#xa;timelist.add(&quot;0:30&quot;);&#xa;timelist.add(&quot;0:45&quot;);&#xa;timelist.add(&quot;01:00&quot;);&#xa;timelist.add(&quot;01:15&quot;);&#xa;timelist.add(&quot;01:30&quot;);&#xa;timelist.add(&quot;01:45&quot;);&#xa;timelist.add(&quot;02:00&quot;);&#xa;timelist.add(&quot;02:15&quot;);&#xa;timelist.add(&quot;02:30&quot;);&#xa;timelist.add(&quot;02:45&quot;);&#xa;timelist.add(&quot;03:00&quot;);&#xa;timelist.add(&quot;03:15&quot;);&#xa;timelist.add(&quot;03:30&quot;);&#xa;timelist.add(&quot;03:45&quot;);&#xa;timelist.add(&quot;04:00&quot;);&#xa;timelist.add(&quot;04:15&quot;);&#xa;timelist.add(&quot;04:30&quot;);&#xa;timelist.add(&quot;04:45&quot;);&#xa;timelist.add(&quot;05:00&quot;);&#xa;timelist.add(&quot;05:15&quot;);&#xa;timelist.add(&quot;05:30&quot;);&#xa;timelist.add(&quot;05:45&quot;);&#xa;timelist.add(&quot;06:00&quot;);&#xa;timelist.add(&quot;06:15&quot;);&#xa;timelist.add(&quot;06:30&quot;);&#xa;timelist.add(&quot;06:45&quot;);&#xa;timelist.add(&quot;07:00&quot;);&#xa;timelist.add(&quot;07:15&quot;);&#xa;timelist.add(&quot;07:30&quot;);&#xa;timelist.add(&quot;07:45&quot;);&#xa;timelist.add(&quot;08:00&quot;);&#xa;timelist.add(&quot;08:15&quot;);&#xa;timelist.add(&quot;08:30&quot;);&#xa;timelist.add(&quot;08:45&quot;);&#xa;timelist.add(&quot;09:00&quot;);&#xa;timelist.add(&quot;09:15&quot;);&#xa;timelist.add(&quot;09:30&quot;);&#xa;timelist.add(&quot;09:45&quot;);&#xa;timelist.add(&quot;10:00&quot;);&#xa;timelist.add(&quot;10:15&quot;);&#xa;timelist.add(&quot;10:30&quot;);&#xa;timelist.add(&quot;10:45&quot;);&#xa;timelist.add(&quot;11:00&quot;);&#xa;timelist.add(&quot;11:15&quot;);&#xa;timelist.add(&quot;11:30&quot;);&#xa;timelist.add(&quot;11:45&quot;);&#xa;timelist.add(&quot;12:00&quot;);&#xa;timelist.add(&quot;12:15&quot;);&#xa;timelist.add(&quot;12:30&quot;);&#xa;timelist.add(&quot;12:45&quot;);&#xa;timelist.add(&quot;13:00&quot;);&#xa;timelist.add(&quot;13:15&quot;);&#xa;timelist.add(&quot;13:30&quot;);&#xa;timelist.add(&quot;13:45&quot;);&#xa;timelist.add(&quot;14:00&quot;);&#xa;timelist.add(&quot;14:15&quot;);&#xa;timelist.add(&quot;14:30&quot;);&#xa;timelist.add(&quot;14:45&quot;);&#xa;timelist.add(&quot;15:00&quot;);&#xa;timelist.add(&quot;15:15&quot;);&#xa;timelist.add(&quot;15:30&quot;);&#xa;timelist.add(&quot;15:45&quot;);&#xa;timelist.add(&quot;16:00&quot;);&#xa;timelist.add(&quot;16:15&quot;);&#xa;timelist.add(&quot;16:30&quot;);&#xa;timelist.add(&quot;16:45&quot;);&#xa;timelist.add(&quot;17:00&quot;);&#xa;timelist.add(&quot;17:15&quot;);&#xa;timelist.add(&quot;17:30&quot;);&#xa;timelist.add(&quot;17:45&quot;);&#xa;timelist.add(&quot;18:00&quot;);&#xa;timelist.add(&quot;18:15&quot;);&#xa;timelist.add(&quot;18:30&quot;);&#xa;timelist.add(&quot;18:45&quot;);&#xa;timelist.add(&quot;19:00&quot;);&#xa;timelist.add(&quot;19:15&quot;);&#xa;timelist.add(&quot;19:30&quot;);&#xa;timelist.add(&quot;19:45&quot;);&#xa;timelist.add(&quot;20:00&quot;);&#xa;timelist.add(&quot;20:15&quot;);&#xa;timelist.add(&quot;20:30&quot;);&#xa;timelist.add(&quot;20:45&quot;);&#xa;timelist.add(&quot;21:00&quot;);&#xa;timelist.add(&quot;21:15&quot;);&#xa;timelist.add(&quot;21:30&quot;);&#xa;timelist.add(&quot;21:45&quot;);&#xa;timelist.add(&quot;22:00&quot;);&#xa;timelist.add(&quot;22:15&quot;);&#xa;timelist.add(&quot;22:30&quot;);&#xa;timelist.add(&quot;22:45&quot;);&#xa;timelist.add(&quot;23:00&quot;);&#xa;timelist.add(&quot;23:15&quot;);&#xa;timelist.add(&quot;23:30&quot;);&#xa;timelist.add(&quot;23:45&quot;);&#xa;for(int i = 0; i&lt;timelist.size();i++)&#xa;timeChoice.add(timelist.get(i));"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JFrame" name="jFrame2">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="300" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
+    <Container class="javax.swing.JFrame" name="modifyAppointmentFrame">
+      <Properties>
+        <Property name="title" type="java.lang.String" value="Modify Appointment"/>
+        <Property name="alwaysOnTop" type="boolean" value="true"/>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[800, 600]"/>
+        </Property>
+        <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="&quot;ModifyAppointmentFrame&quot;" type="code"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="modifyAppointmentButton" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="firstNamePat1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="firstNameTextbox1" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jScrollPane3" min="-2" pref="307" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="lastNamePat2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="lastNameTextbox1" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="lastNamePat4" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jDateChooser1" min="-2" pref="228" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="lastNamePat5" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="timeChoice1" min="-2" pref="85" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="623" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="firstNamePat1" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="firstNameTextbox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lastNamePat2" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="lastNameTextbox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="lastNamePat4" min="-2" pref="16" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jDateChooser1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lastNamePat5" min="-2" pref="16" max="-2" attributes="0"/>
+                      <Component id="timeChoice1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="jScrollPane3" alignment="0" min="-2" pref="182" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="188" max="32767" attributes="0"/>
+                  <Component id="modifyAppointmentButton" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel5">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="sansserif" size="36" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Modify Appointment"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="modifyAppointmentButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Modify Appointment"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="modifyAppointmentButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="firstNamePat1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="First Name:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lastNamePat2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Last Name:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lastNamePat4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Date Choosen:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lastNamePat5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Time:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel6">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Appointment Details:"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="appointmentDetails1">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JTextField" name="firstNameTextbox1">
+        </Component>
+        <Component class="javax.swing.JTextField" name="lastNameTextbox1">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+          </Properties>
+        </Component>
+        <Component class="com.toedter.calendar.JDateChooser" name="jDateChooser1">
+        </Component>
+        <Component class="java.awt.Choice" name="timeChoice1">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new java.awt.Choice()"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="for(int i = 0; i&lt;timelist.size();i++)&#xa;timeChoice1.add(timelist.get(i));"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jCalendar1" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="addAppointment" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jSeparator1" min="-2" pref="1169" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+              <Component id="appointmentList" min="-2" pref="592" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="deleteAppointmentButton" max="32767" attributes="0"/>
+                  <Component id="modifyAppt" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="addAppointment" min="-2" max="-2" attributes="0"/>
+                  <Component id="jCalendar1" pref="404" max="32767" attributes="0"/>
+              </Group>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jSeparator1" min="-2" pref="17" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="appointmentList" min="-2" pref="146" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="deleteAppointmentButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="modifyAppt" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="34" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Welcome!"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+    </Component>
+    <Component class="com.toedter.calendar.JCalendar" name="jCalendar1">
+      <Properties>
+        <Property name="date" type="java.util.Date" editor="org.netbeans.beaninfo.editors.DateEditor">
+          <SerializedValue value="-84,-19,0,5,115,114,0,14,106,97,118,97,46,117,116,105,108,46,68,97,116,101,104,106,-127,1,75,89,116,25,3,0,0,120,112,119,8,0,0,1,-128,56,119,126,-56,120"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCalendar1MouseClicked"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="try {&#xa;            System.out.println(&quot;Reading appointments from: &quot; + this.getDirectory());&#xa;            Scanner s = new Scanner(new File(this.getDirectory() + &quot;\\appointments.txt&quot;));&#xa;            //ArrayList&lt;String&gt; list = new ArrayList&lt;String&gt;();&#xa;            &#xa;            while (s.hasNextLine()) {&#xa;                appointmentList.add(s.nextLine());&#xa;                System.out.println(&quot;appointment read&quot;);&#xa;            }&#xa;            System.out.println(&quot;Appointment list import complete.&quot;);&#xa;            s.close();&#xa;        } catch (Exception e) {&#xa;            &#xa;        }"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JSeparator" name="jSeparator1">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Upcoming Appointments:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="addAppointment">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Add Appointment"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+        <Property name="name" type="java.lang.String" value="addAppointment" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addAppointmentActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="java.awt.List" name="appointmentList">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="appointmentListActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="deleteAppointmentButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Remove Appointment"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deleteAppointmentButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="modifyAppt">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Modify Appointment"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="modifyApptActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
